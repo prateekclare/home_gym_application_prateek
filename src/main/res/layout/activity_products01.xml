@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProductsActivity">
+
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imgViewPowders"
+                android:layout_width="202dp"
+                android:layout_height="202dp"
+                android:layout_marginTop="28dp"
+                android:layout_marginBottom="296dp"
+                app:layout_constraintBottom_toTopOf="@+id/imgViewShakes"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.079"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/plantprotein"
+                tools:src="@tools:sample/avatars" />
+
+            <Button
+                android:id="@+id/buttonPowder"
+                android:layout_width="157dp"
+                android:layout_height="39dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginLeft="50dp"
+                android:text="All Powders"
+                app:layout_constraintBottom_toTopOf="@+id/imgViewEnergy"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/imgViewPowders"
+                app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <ImageView
+                android:id="@+id/imgViewEnergy"
+                android:layout_width="218dp"
+                android:layout_height="199dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.912"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.337"
+                app:srcCompat="@drawable/energydrinks"
+                tools:src="@tools:sample/avatars" />
+
+            <Button
+                android:id="@+id/buttonEnergy"
+                android:layout_width="188dp"
+                android:layout_height="42dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginTop="205dp"
+                android:layout_marginEnd="19dp"
+                android:layout_marginRight="19dp"
+                android:layout_marginBottom="48dp"
+                android:text="All Energy Drinks"
+                app:layout_constraintBottom_toTopOf="@+id/imgViewShakes"
+                app:layout_constraintEnd_toStartOf="@+id/imgViewEnergy"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imgViewPowders" />
+
+            <ImageView
+                android:id="@+id/imgViewShakes"
+                android:layout_width="208dp"
+                android:layout_height="212dp"
+                android:layout_marginTop="524dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.058"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/proteinshakes"
+                tools:src="@tools:sample/avatars" />
+
+            <Button
+                android:id="@+id/buttonShakes"
+                android:layout_width="189dp"
+                android:layout_height="42dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="23dp"
+                android:layout_marginRight="23dp"
+                android:text="All Protein Bars"
+                app:layout_constraintEnd_toStartOf="@+id/imgViewBars"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine4" />
+
+            <ImageView
+                android:id="@+id/imgViewBars"
+                android:layout_width="221dp"
+                android:layout_height="226dp"
+                android:layout_marginTop="796dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.938"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/bars"
+                tools:src="@tools:sample/avatars" />
+
+            <Button
+                android:id="@+id/buttonBars"
+                android:layout_width="130dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="63dp"
+                android:layout_marginLeft="63dp"
+                android:layout_marginTop="14dp"
+                android:layout_marginBottom="58dp"
+                android:text="All Shakes"
+                app:layout_constraintBottom_toTopOf="@+id/imgViewBars"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/imgViewShakes"
+                app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine3"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <EditText
+                android:id="@+id/editTextTextMultiLine"
+                android:layout_width="219dp"
+                android:layout_height="158dp"
+                android:layout_marginStart="223dp"
+                android:layout_marginLeft="223dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:ems="10"
+                android:focusable="false"
+                android:fontFamily="serif"
+                android:gravity="start|top"
+                android:inputType="textMultiLine"
+                android:text="Get what your body needs by adding this fine, flavorless powder to beverages, foods or batters.                                                                                                    . Provides balanced amounts of the nine essential amino acids."
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textIsSelectable="false"
+                app:layout_constraintBottom_toTopOf="@+id/imgViewEnergy"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/imgViewPowders"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <EditText
+                android:id="@+id/editTextTextMultiLine3"
+                android:layout_width="219dp"
+                android:layout_height="158dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="112dp"
+                android:ems="10"
+                android:focusable="false"
+                android:fontFamily="serif"
+                android:gravity="start|top"
+                android:inputType="textMultiLine"
+                android:text="A delicious chocolate protein shake that helps build and maintain lean muscle mass.  25g of whey and casein proteins. Conveniently ready to drink."
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                app:layout_constraintBottom_toTopOf="@+id/imgViewBars"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/imgViewShakes"
+                app:layout_constraintTop_toBottomOf="@+id/imgViewEnergy"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <EditText
+                android:id="@+id/editTextTextMultiLine4"
+                android:layout_width="213dp"
+                android:layout_height="155dp"
+                android:layout_marginTop="60dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginRight="15dp"
+                android:ems="10"
+                android:focusable="false"
+                android:fontFamily="serif"
+                android:gravity="start|top"
+                android:inputType="textMultiLine"
+                android:text="Made with 100% Protein Isolate and fortified with high fiber and only 2 grams of sugar, this variety of Chocolate Brownie and Chocolate Chip Cookie Dough protein bars guarantee delicious and healthy snacking choices for any taste."
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/imgViewBars"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imgViewShakes"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <EditText
+                android:id="@+id/editTextTextMultiLine5"
+                android:layout_width="205dp"
+                android:layout_height="151dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="17dp"
+                android:layout_marginRight="17dp"
+                android:layout_marginBottom="4dp"
+                android:ems="10"
+                android:focusable="false"
+                android:fontFamily="serif"
+                android:gravity="start|top"
+                android:inputType="textMultiLine"
+                android:text="Positive energy to fuel your next adventure. Packed with 80 mg of caffeine, mega doses of B vitamins, 1–2 g of carbs and only 10 calories* per can."
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                app:layout_constraintBottom_toTopOf="@+id/buttonEnergy"
+                app:layout_constraintEnd_toStartOf="@+id/imgViewEnergy"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imgViewPowders"
+                app:layout_constraintVertical_bias="1.0" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
